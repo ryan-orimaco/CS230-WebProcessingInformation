@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "608304405dbf552c44e332b2"
+  },
+  "Manufacturer": "Samsung",
+  "Model": "A20E",
+  "Price": "€199.99"
+},{
+  "_id": {
+    "$oid": "608304d0a3f29e4450b780fd"
+  },
+  "Manufacturer": "Apple",
+  "Model": "iPhone 7",
+  "Price": "€599"
+},{
+  "_id": {
+    "$oid": "60830594284256c26ce7239c"
+  },
+  "Manufacturer": "Huawei",
+  "Model": "P10",
+  "Price": "€299"
+},{
+  "_id": {
+    "$oid": "6083068d4d271bb04c19c622"
+  },
+  "Manufacturer": "Samsung",
+  "Model": "J13",
+  "Price": "€199"
+},{
+  "_id": {
+    "$oid": "60857b5b8f4827555867e5b0"
+  },
+  "Manufacturer": "Apple",
+  "Model": "iPhone 12",
+  "Price": "€1099"
+},{
+  "_id": {
+    "$oid": "60857f6e3b5cd447200aea75"
+  },
+  "Manufacturer": "Apple",
+  "Model": "iPhone 6",
+  "Price": "€599"
+}]
