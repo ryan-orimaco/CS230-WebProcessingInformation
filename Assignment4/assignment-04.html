@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+
+<!--I will be using Dr. John Keating's code from midterm as a template.-->
+<body>
+        <div class="container">
+                <form id="userinfo">
+                     
+                        
+                        <label for="title">Title*</label>
+                        <input id="title" name="title" placeholder="Title">
+                        <br>
+                        
+
+                        <label for="firstname">Firstname*</label>
+                        <input id="firstname" name="firstname" placeholder="Firstname">
+                        <br>
+      
+
+                        <label for="surname">Surname*</label>
+                        <input id="surname" name="surname" placeholder="surname">
+                        <br>
+        
+
+                        <label for="mobile">Mobile*</label>
+                        <input id="mobile" name="mobile" placeholder="mobile">
+                        <br>
+           
+
+                       <label for="email">Email Address</label>
+                        <input id="email" name="email" placeholder="email">
+                        <br>
+            
+
+                            <label for="address1">Address Line 1*</label>
+                            <input id="address1" name="address1" placeholder="Address Line 1">
+                            <br>
+                     
+    
+                            <label for="address2">Address Line 2</label>
+                            <input id="address2" name="address2" placeholder="Address Line 2">
+                            <br>
+    
+                            <label for="town">Town*</label>
+                            <input id="town" name="town" placeholder="town">
+                            <br>
+    
+                            <label for="county">County*</label>
+                            <input id="county" name="county" placeholder="county">
+                            <br>
+    
+                           <label for="eircode">Eircode</label>
+                            <input id="eircode" name="eircode" placeholder="eircode">
+                            <br>
+                          
+                            <p>* = These fields are required</p>
+
+                        
+
+                    
+                                <input type="submit" value="Send User Data">
+                           </form>
+        </div>
+
+
+            <div>
+                    <form id="userlist">
+                        
+                               
+
+                                <label for="submit">Click here to retrieve Database</label>
+                                    <input type="submit" value="Get User Database">
+                    </form>
+                </div>
+</body>
+
+<script>
+    $('#userinfo').submit(function (e) {
+    var user = {
+       title: $('input[name=title').val(),
+        firstname: $('input[name=firstname').val(),
+        surname: $('input[name=surname').val(),
+        mobile: $('input[name=mobile').val(),
+        email: $('input[name=email').val(),
+        address1: $('input[name=address1').val(),
+        address2: $('input[name=address2').val(),
+        town: $('input[name=town').val(),
+        county: $('input[name=county').val(),
+        eircode: $('input[name=eircode').val(),
+    };
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:8000/api/user',
+        data: user
+    })
+       
+        
+});
+
+
+$('#userlist').submit(function (e) 
+{
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://localhost:8000/api/user'
+                })
+                e.preventDefault(); 
+            });
+</script>
+</html>
