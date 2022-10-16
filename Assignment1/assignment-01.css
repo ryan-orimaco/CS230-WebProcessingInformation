@@ -1,0 +1,159 @@
+
+body{
+  max-width: 520px;
+  max-height: 590px;
+  background: rgb(112,194,250);
+background: linear-gradient(194deg, rgba(112,194,250,1) 0%, rgba(222,237,69,1) 98%, rgba(232,173,7,1) 100%);
+}
+.pyramid{
+  width: 700px;
+  height: 542px;
+  display: flex;
+  flex-direction: column;
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  position: relative;
+  right: -20px;
+  bottom: -10px;
+  overflow: hidden;
+  margin: 0;
+
+  
+}
+
+.pyramid div{
+  flex: 1 1 100%;
+  margin-bottom: 2px; 
+}
+
+.one
+{
+  
+  background-color: blueviolet;
+  
+}
+
+
+.two
+{
+  top: 110px;
+  background-color: rgb(43, 143, 189);
+}
+
+
+ .three
+{
+
+  background-color: rgb(83, 250, 6);
+}
+
+ .four
+{
+  background-color: chocolate;
+}
+
+ .five
+{
+  background-color: rgba(233, 250, 1, 0.644);
+}
+.six
+{
+  background-color: peru;
+}
+
+.plus,.minus,.quantity
+{
+  position: relative;
+  right: -320px;
+  bottom: -15px;
+}
+
+.type
+{
+  position: relative;
+  right: -320px;
+  bottom: -14px;
+  font-size: 14px;
+
+}
+
+#type1
+{
+  font-size: 9px;
+  position: relative;
+  bottom: -39px;
+}
+
+#type2, #type3, #type4,#type5,#type6
+{
+  display: block;
+}
+
+button{
+  border-radius: 50%;
+  height: 23px;
+  width: 23px;
+  background-color: rgb(136, 127, 127);
+  color: black;
+  padding:0px;
+ 
+  border-style: none;
+}
+
+.quantity{
+    font-size: 20px;
+    
+    
+}
+
+.plus:hover
+{
+  background-color: #76a76f;
+  color: black;
+  
+}
+
+.minus:hover
+{
+  background-color: rgb(129, 184, 127);
+}
+
+
+#plus1,#minus1,#quantity1
+{
+  position: relative;
+  bottom: -32px;
+}
+
+/**Time to tell them to move the text**/
+.ones
+{
+  position: relative;
+  top: -520px;
+  right: -590px;
+  font-size: 20px;
+}
+
+#date
+{
+  width: 125px;
+  position: relative;
+  top: -520px;
+  right: -730px;
+}
+
+#submit
+{
+  position: relative;
+  top: -520px;
+  right: -730px;
+}
+
+#datetoday
+{
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: -520px;
+  right: -730px;
+}

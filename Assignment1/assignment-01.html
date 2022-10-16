@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Pyramid</title>
+    <link rel = "stylesheet" href = "assignment-01.css">
+    
+</head>
+
+<body>
+    
+    	<div class = "pyramid" id = "transition1">
+            
+         <div class = "tier one">
+        <p class ="type" id = "type1"><b>Fats,Sugars,Salt</b></p>
+        <div class ="contents">
+        <button class = "minus"id="minus1">-</button>
+        <span class = "quantity" id="quantity1">0</span>
+        <button class = "plus" id="plus1">+</button>
+    </div>
+        </div>
+ 
+        
+        <div class = "tier two">
+            <p class="type" id = "type2"><b>Fats,Spreads,Oils</b></p>
+            <button class = "minus" id="minus2">-</button>
+            <span class = "quantity" id="quantity2">0</span>
+        <button class = "plus" id="plus2">+</button>
+        
+      
+        </div>
+
+  
+        <div class = "tier three">
+            <p class="type" id = "type3"><b>Proteins</b></p>
+            <button class = "minus" id = "minus3">-</button>
+            <span class = "quantity" id = "quantity3">0</span>
+        <button class = "plus" id="plus3">+</button>
+        </div>
+
+
+      
+        <div class = "tier four">
+            <p class="type" id = "type4"><b>Dairy</b></p>
+            <button class = "minus" id = "minus4">-</button>
+            <span class = "quantity" id = "quantity4">0</span>
+        <button class = "plus" id = "plus4">+</button>
+        
+        </div>
+
+
+        <div class = "tier five">
+            <p class="type" id = "type5"><b>Carbohydrates</b></p>
+            <button class = "minus" id = "minus5">-</button>
+            <span class = "quantity" id = "quantity5">0</span>
+        <button class = "plus" id = "plus5">+</button>
+        </div>
+
+        <div class = "tier six">
+        <p class="type" id = "type6"><b>Fruits and Vegetables</b></p>
+        <button class = "minus" id = "minus6">-</button>
+            <span class = "quantity" id = "quantity6">0</span>
+        <button class = "plus" id = "plus6">+</button>
+        </div>
+
+    </div>
+
+
+<p class = "ones">Hello! Welcome to the Interactive Food Pyramid<br>Before using the Food Pyramid, please enter today's date for verification.</p>
+<form>
+ <input type="date" id = "date" value ="" min = "2021-02-19" max = "2021-03-05"><input type = "button" onclick="getDate()" value = "Submit" id ="submit">
+</form>
+<p id = "datetoday">Today's Date is:<span id ="getthedate"></span></p>
+
+    <script src = "assignment-01.js"></script>
+</body>
+</html>
